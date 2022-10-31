@@ -17,8 +17,9 @@ on:
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   # Need `contents: read` to checkout the repository
+    contents: read
   # Need `contents: write` to update the step metadata
-  contents: write
+    contents: write
 
 jobs:
   on_fix_test:
